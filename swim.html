@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swim | STREETWISE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="top-header" aria-label="STREETWISE header">
+        <button class="icon-button" type="button" aria-label="Open menu" data-menu-open><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" /></svg></button>
+        <a class="logo-lockup" href="index.html" aria-label="STREETWISE home"><span class="logo-row">STREETWISE<svg class="bolt" aria-hidden="true" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-7l0-7Z" /></svg></span></a>
+        <button class="icon-button cart-button" type="button" aria-label="Open cart" data-cart-open><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 7h15l-2 9H8L6 7ZM6 7 5.4 4H3" /><path d="M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" /></svg><span class="cart-badge" id="cartCount">2</span></button>
+      </header>
+      <div class="drawer-backdrop" data-drawer-backdrop hidden></div>
+      <aside class="drawer menu-drawer" aria-label="Menu" data-menu-panel hidden><div class="drawer-header"><p>Menu</p><button class="drawer-close" type="button" aria-label="Close menu" data-drawer-close><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></svg></button></div><nav class="drawer-links" aria-label="Menu links"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="swim.html">Swim</a><a href="bike.html">Bike</a><a href="run.html">Run</a><a href="fitness.html">Fitness</a></nav></aside>
+      <aside class="drawer cart-drawer" aria-label="Shopping cart" data-cart-panel hidden><div class="drawer-header"><p>Your Cart</p><button class="drawer-close" type="button" aria-label="Close cart" data-drawer-close><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12" /></svg></button></div><div class="cart-items" data-cart-items><article><span>ZONE3 Aspire Wetsuit</span><strong>R6,999</strong></article><article><span>On Cloudboom Echo 3</span><strong>R4,299</strong></article></div><div class="cart-summary"><span>Estimated total</span><strong data-cart-total>R11,298</strong></div><a class="checkout-button" href="shop.html">Continue Shopping</a></aside>
+      <main>
+        <section class="page-hero" aria-labelledby="page-title"><h1 id="page-title">SWIM GEAR</h1><p>Open-water confidence, race-day speed, and kit that handles the cold start.</p></section>
+        <nav class="category-tabs" aria-label="Shop categories"><a href="shop.html">All</a><a class="active" href="swim.html">Swim</a><a href="bike.html">Bike</a><a href="run.html">Run</a><a href="fitness.html">Fitness</a></nav>
+        <section class="page-sport-section" aria-labelledby="sport-title"><div class="section-heading"><h2 id="sport-title">SHOP BY SPORT</h2><a href="shop.html">View all &gt;</a></div><div class="h-scroll sport-scroll" aria-label="Sport categories"><a class="sport-card swim" href="swim.html"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M2 18c2 0 2-1.5 4-1.5S8 18 10 18s2-1.5 4-1.5S16 18 18 18s2-1.5 4-1.5" /><path d="M7 10 17 4M15 4h2v2" /></svg><h3>Swim</h3></a><a class="sport-card bike" href="bike.html"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM19 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" /><path d="M5 15h4l3-6h3l4 6M9 15l-2-5h3" /></svg><h3>Bike</h3></a><a class="sport-card run" href="run.html"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m13 4 3 3-3 3" /><path d="M4 20h6l2-5 4 1 4-5" /><path d="M9 8 6 12l4 3" /></svg><h3>Run</h3></a><a class="sport-card fitness" href="fitness.html"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6v12M18 6v12M3 10v4M21 10v4M6 12h12" /></svg><h3>Fitness</h3></a></div></section>
+        <section class="catalog-section" aria-labelledby="catalog-title"><div class="section-heading"><h2 id="catalog-title">SWIM PICKS</h2></div><div class="catalog-grid"><article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=420&q=80" alt="ZONE3 Aspire Wetsuit" /></div><div class="product-info"><h3>ZONE3 Aspire Wetsuit</h3><p>R6,999</p><button class="add-button" type="button" data-product-name="ZONE3 Aspire Wetsuit" data-product-price="6999" aria-label="Add ZONE3 Aspire Wetsuit to cart"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 7h15l-2 9H8L6 7ZM6 7 5.4 4H3" /><path d="M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" /></svg></button></div></article><article class="product-card"><div class="product-image"><img src="https://images.unsplash.com/photo-1526401485004-46910ecc8e51?auto=format&fit=crop&w=420&q=80" alt="Aqua Sphere Race Goggles" /></div><div class="product-info"><h3>Aqua Sphere Race Goggles</h3><p>R899</p><button class="add-button" type="button" data-product-name="Aqua Sphere Race Goggles" data-product-price="899" aria-label="Add Aqua Sphere Race Goggles to cart"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 7h15l-2 9H8L6 7ZM6 7 5.4 4H3" /><path d="M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" /></svg></button></div></article></div></section>
+      </main>
+      <nav class="bottom-nav" aria-label="Mobile navigation"><a href="index.html"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8" /><path d="M5 10v10h14V10" /></svg><span>Home</span></a><a class="active" href="shop.html"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M11 20a9 9 0 1 0-6.4-2.6L2 22l4.6-2.6A9 9 0 0 0 11 20Z" /><path d="m21 21-4.3-4.3" /></svg><span>Shop</span></a><a href="#"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z" /></svg><span>Wishlist</span></a><a href="#"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 21a8 8 0 1 0-16 0" /><path d="M12 13a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" /></svg><span>Account</span></a></nav>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
